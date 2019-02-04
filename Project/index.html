@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Maserati</title>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header"><img src="images/Header.png" alt="Footer"/>
+            </div>
+            <div id="content">
+                <div id="nav">
+                    <ul>
+                        <li><a title="to main" href="index.html" ><img src="images/Logo.jpg" alt="Logo"> </a></li>
+                        <li><a title="Ghibli" href="Ghibli.html" >Ghibli</a></li>
+                        <li><a title="Quattroporte" href="Quattroporte.html" >Quattroporte</a></li>
+                        <li><a title="GranTurismo" href="GranTurismo.html" >GranTurismo</a></li>
+                    </ul>
+                    <div id="map"><img src="images/Map.jpg" alt="Map"/></div>
+                </div>    
+                <div id="main">
+                    <table>
+                        <tr>
+                            <th id="main_title" colspan="3"><h1>Main</h1></th>
+                    
+                        </tr>
+                        <tr>
+                            <td class="small_card">
+                                <img src="images/Ghibli.jpg" alt="Ghibli">
+                                <small>Buisness class</small>
+                                <h2>Ghibli</h2>
+                                <p>Buisness class sedan</p>
+                                <a title="Ghibli" href="Ghibli.html" >Ghibli</a>
+                            </td>
+                            <td class="small_card">
+                                <img src="images/Quatro.jpg" alt="Quattroporte">
+                                <small>S-class</small>
+                                <h2>Quattroporte</h2>
+                                <p>S-class sedan</p>
+                                <a title="Quattroporte" href="Quattroporte.html" >Quattroporte</a>
+                            </td>
+                            <td class="small_card">
+                                <img src="images/Grand.jpg" alt="GranTurismo">
+                                <small>Coupe</small>
+                                <h2>GranTurismo</h2>
+                                <p>Bla bla bla class sedan</p>
+                                <a title="GranTurismo" href="GranTurismo.html" >GranTurismo</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="big_card" colspan="3">
+                                <img src="images/Form.png" alt="Frpm"/>
+                                <form action="/Home/Order" method="post">
+                                    <fieldset>
+                                        <legend>Оформление заказа</legend>
+                                        <input type="text" name="Name" placeholder="Input your name" required/><br/>
+                                        <input type="tel" name="Tel" placeholder="Input your phone number" required pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{4}"/><br/>
+                                        <select name="Car">
+                                            <option value="Ghibli">Ghibli</option>
+                                            <option value="Quattroporte">Quattroporte</option>
+                                            <option value="GranTurismo">GranTurismo</option>
+                                        </select><br/>
+                                        <input type="submit"/>
+                                    </fieldset>
+                                    
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="footer"></div>
+        </div>
+    </body>
+</html>
